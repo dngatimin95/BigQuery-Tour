@@ -1,4 +1,4 @@
-# BigQuery_Tour
+# BigQuery-Tour
 
 This repo contains multiple scripts which queries results from the geo_international_ports dataset and stores it in a table within my own dataset under the bigquery-trial project on Google Cloud Platform. There are scripts for each individual questions. Since most of the code in the three scripts are similar, I could create a function and pass different table names and SQL query into the function to simplify things but having three seperate files follows the guidelines set by the question and is easier to understand.
 
