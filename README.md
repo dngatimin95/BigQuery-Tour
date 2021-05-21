@@ -6,4 +6,4 @@ This repo contains multiple scripts which queries results from the geo_internati
 2. The second script `number_of_ports.py` queries a table that finds the country that has the largest number of ports with a cargo wharf.
 3. The final script, `distress_call_port.py` creates a table that finds the nearest port given a coordinates with provisions, water, fuel and diesel.
 
-To use this repo, first download the files and ensure that the correct packages are installed (google-cloud/google-cloud-bigquery). Then just run the scripts (e.g. `python nearest_ports.py`) and it should create the tables under the 'bigquery-trial' project folder under the bigquery-tour dataset! 
+To use this repo, first download the files and ensure that the correct packages are installed (google-cloud/google-cloud-bigquery). Then just run the scripts (e.g. `python nearest_ports.py`) and it should create the tables under the 'tour-dataset' project folder under the bigquery-tour dataset. Unfortunately, due to security reasons, I won't be providing the json which has the private key but be sure to have a service account key before you start!

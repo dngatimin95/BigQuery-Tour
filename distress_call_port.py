@@ -2,7 +2,7 @@
 The code below creates a table that finds the nearest port given a coordinates
 with provisions, water, fuel and diesel from the geo_international_ports dataset
 and stores it within a dataset. A dataset foodpanda_project is created if the
-specified dataset does not exist within the project folder 'foodpanda-de-project-1'.
+specified dataset does not exist within the project folder 'bigquery-tour'.
 """
 
 import os
@@ -10,14 +10,14 @@ from google.cloud import bigquery
 from google.cloud.exceptions import NotFound
 
 # Set up environment variable to the path of JSON file
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "Foodpanda DE Project-fc639d8bf7d1.json"
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "bigquery-tour-635ad9479312.json"
 
 # Create new Google BigQuery client using Cloud Platform project default
 client = bigquery.Client()
 
 # Reference to project id and new or existing dataset
-project_id = "foodpanda-de-project-1"
-dataset_id = "foodpanda_project"
+project_id = "bigquery-tour"
+dataset_id = "tour-dataset"
 full_dataset_id = "{}.{}".format(project_id, dataset_id)
 
 # Check to see if dataset already exists within project, if not then create new BigQuery dataset
