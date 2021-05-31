@@ -1,6 +1,6 @@
 # BigQuery-Tour
 
-This repo contains multiple scripts which queries results from the geo_international_ports dataset and stores it in a table within my own dataset under the bigquery-trial project on Google Cloud Platform. There are scripts for each individual questions. Since most of the code in the three scripts are similar, I could create a function and pass different table names and SQL query into the function to simplify things but having three seperate files follows the guidelines set by the question and is easier to understand.
+This repo contains multiple scripts which queries results from the geo_international_ports dataset and stores it in a table within my own dataset under the bigquery-trial project on Google Cloud Platform.
 
 1. The first script `nearest_ports.py` queries a table that finds the 5 nearest ports to Singapore's JURONG ISLAND port.
 2. The second script `number_of_ports.py` queries a table that finds the country that has the largest number of ports with a cargo wharf.
